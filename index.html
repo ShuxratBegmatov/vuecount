@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="vue.min.js"></script>
+    <title>Vue js</title>
+</head>
+
+<body>
+    <div id="app">
+        {{text}} {{item}}
+        <button @click="ok()">
+ok
+        </button>
+    </div>
+</body>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            item: 0,
+            text: 'hello tik tok'
+
+        },
+        methods: {
+            ok() {
+                this.item++
+            }
+        }
+    })
+</script>
+
+</html>
